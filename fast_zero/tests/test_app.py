@@ -20,7 +20,7 @@ def test_template_deve_retornar_ok_e_html(client):
 
 def test_create_user(client):
     response = client.post(
-        '/users/',
+        '/users',
         json={
             'username': 'alice',
             'email': 'alice@example.com',
